@@ -10,3 +10,6 @@ class Event(models.Model):
     location = models.CharField(max_length=500)
 
     category = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
